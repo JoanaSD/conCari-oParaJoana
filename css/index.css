@@ -1,0 +1,171 @@
+/* ------------------------ RESET ------------------------ */
+
+* {
+    background-color: transparent;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font: inherit;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    line-height: 1.5;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+/* ---------------------- END RESET ---------------------- */
+
+.supercontainer {
+    background-color: rgb(36, 168, 36);
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(250, 250, 250);
+
+    max-width: 800px;
+
+    padding: 2rem;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .lightRow.row1 {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.container .lightRow.row2 {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .lightRow.row3 {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.container .lightRow.row4 {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .lightRow .light {
+    background-color: red;
+
+    width: 25px;
+    height: 25px;
+
+    border: solid 2px chartreuse;
+    border-radius: 50%;
+
+    transition: all 0.5s;
+}
+
+.subcontainer .subcontainer__title {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.subcontainer .subcontainer__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subcontainer .subcontainer__form .subcontainer__form__input {
+    background-color: white;
+
+    padding: 1rem;
+    border: solid 2px grey;
+    border-radius: 5px;
+
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.subcontainer .subcontainer__form .subcontainer__form__submit {
+    background-color: black;
+
+    padding: 0.25rem 0.5rem;
+    border: solid 2px white;
+    border-radius: 5px;
+
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+.subcontainer .subcontainer__form .subcontainer__form__submit:hover {
+    border-color: black;
+    cursor: pointer;
+}
